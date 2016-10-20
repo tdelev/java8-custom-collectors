@@ -1,0 +1,11 @@
+== JUG MK Tech session #19 live coding demo
+
+=== Contents
+
+* Examples with build-in `Collectors` helper class
+** `Collectors.toList()`
+** `Collectors.groupingBy(...)`
+** `Collectors.summarizingInt()`
+** `Collectors.joining()`
+
+* Example with custom collector

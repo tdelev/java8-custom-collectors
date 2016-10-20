@@ -64,9 +64,13 @@ public class HelperCollectors extends BaseTest {
     }
 
     @Test
-    public void toPointsStatistics() {
+    public void pointsStatistics() {
         IntSummaryStatistics pointsStatistics = players.stream()
                 .collect(Collectors.summarizingInt(Player::getPoints));
+
+        /*pointsStatistics = players.stream()
+                .mapToInt(Player::getPoints)
+                .summaryStatistics();*/
 
         System.out.println(pointsStatistics);
     }
